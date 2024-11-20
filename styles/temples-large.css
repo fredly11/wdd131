@@ -1,0 +1,19 @@
+#mainNav {
+    display: block;
+  }
+  
+  #mainNav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #mainNav ul li {
+    margin: 0 1em;
+  }
+  
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
