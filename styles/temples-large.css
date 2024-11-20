@@ -13,7 +13,19 @@
   
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 0;
   }
   
+
+  @media (min-width: 768px) {
+    #mainNav {
+      display: block;
+    }
+  
+    button#hamburger {
+      display: none;
+    }
+  }

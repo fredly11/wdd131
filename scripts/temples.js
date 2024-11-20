@@ -7,7 +7,5 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.style.display = isVisible ? "none" : "block";
       hamburger.innerHTML = isVisible ? "&#9776;" : "X";
     });
-  
-    document.getElementById("lastModified").textContent = document.lastModified;
   });
   

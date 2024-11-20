@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
-  <script src="scripts/temples.js" defer></script>
-</head>
-<body>
-  <header>
-    <h1>Temple Album</h1>
-    <button id="hamburger" aria-label="Menu">&#9776;</button>
-    <nav id="mainNav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Home</h2>
-    <div class="grid-container">
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-      <figure>
-        <img src="placeholder.jpg" alt="San Diego California Temple">
-        <figcaption>San Diego California</figcaption>
-      </figure>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2024 Rubia Magdalena Francesco, Madagascar</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - William Buechele, Temple Album.">
+        <meta name="author" content="William Buechele">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/temples.js" defer></script>
+    </head>
+    <body>
+        <header>
+          <h1>Temple Album</h1>
+          <button id="hamburger" aria-label="Menu">&#9776;</button>
+          <nav id="mainNav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Old</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Large</a></li>
+              <li><a href="#">Small</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+            <h2>Home</h2>
+            <div class="grid-container">
+              <figure>
+                <img src="./images/anchorage-alaska.jpg" alt="Anchorage Alaska Temple">
+                <figcaption>Anchorage Alaska</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/dallas-texas.jpg" alt="Dallas Texas Temple">
+                <figcaption>Dallas Texas</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/billings-montana.jpg" alt="Billings Montana Temple">
+                <figcaption>Billings Montana</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/bern-switzerland.jpg" alt="Bern Switzerland Temple">
+                <figcaption>Bern Switzerland</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/brisbane-australia.jpg" alt="Brisbane Australia Temple">
+                <figcaption>Brisbane Australia</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/calgary-alberta.jpg" alt="Calgary Alberta Temple">
+                <figcaption>San Diego California</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/arequipa-peru.jpeg" alt="Arequipa Peru Temple">
+                <figcaption>Calgary Alberta</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/draper-utah.jpg" alt="Draper Utah Temple">
+                <figcaption>Draper Utah</figcaption>
+              </figure>
+              <figure>
+                <img src="./images/chicago-illinois.jpg" alt="Chicago Illinois Temple">
+                <figcaption>Chicago Illinois</figcaption>
+              </figure>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>©<span id="currentyear"></span> William Buechele, Sherman, TX</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>
