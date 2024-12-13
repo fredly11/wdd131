@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - William Buechele</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - William Buechele, Homepage for learning dynamic web development techniques.">
+        <meta name="author" content="William Buechele">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Place Title</h1>
+        </header>
+        <main>
+            <section class="image-section">
+                <img src="small-image.jpg" alt="Small Image" class="hero">
+            </section>
+            <section class="data-section">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 377,975 km²</p>
+                <p><strong>Population:</strong> 125.7 million (2023)</p>
+                <p><strong>Capital:</strong> Tokyo</p>
+                <p><strong>Languages:</strong> Japanese</p>
+                <p><strong>Currency:</strong> Japanese Yen (JPY)</p>
+                <p><strong>Time Zone:</strong> Japan Standard Time (JST, UTC+9)</p>
+                <p><strong>Calling Code:</strong> +81</p>
+                <p><strong>Internet TLD:</strong> .jp</p>
+            </section>
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <img src="weather-icon.jpg" alt="Weather Icon">
+                <p><strong>Temperature:</strong> 17°C</p>
+                <p><strong>Conditions:</strong> Clear</p>
+                <p><strong>Wind:</strong> 13 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>©<span id="currentyear"></span> William Buechele, Sherman, TX</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
