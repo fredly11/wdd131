@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">WDD 131: Dynamic Web Fundamentals - William Buechele</h1>
+        <nav class="nav">
+            <a href="https://www.linkedin.com/in/william-buechele/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/8?lang=eng&id=p26#p26">Scripture</a>
+            <a>Final Project</a>
+        </nav>
+    </header>
+
+    <main class="review-container">
+        <h1>Thank You for Your Review!</h1>
+        <p>Your feedback has been submitted successfully.</p>
+
+        <p><strong>Total Number of Reviews Submitted: </strong><span id="reviewCounter">0</span></p>
+
+        <button onclick="window.history.back()">Go Back</button>
+    </main>
+
+    <footer class="footer">
+        <p>©<span id="currentyear"></span> William Buechele, Sherman, TX</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('reviewCounter').textContent = localStorage.getItem('reviewCount') || 0;
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>
