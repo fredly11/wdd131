@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - William Buechele</title>
+        <link rel="stylesheet" href="styles/site.css">
+        <link rel="stylesheet" href="styles/site-large.css" media="screen and (min-width: 768px)">
+        <meta name="description" content="Welcome to William Buechele's professional portfolio website. Explore projects and learn more about my web development skills.">
+        <meta name="author" content="William Buechele">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/site.js" defer></script>
+        <script src="scripts/nav.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="title">William Buechele Portfolio</h1>
+            <nav class="nav">
+                <button class="hamburger" id="hamburger">☰</button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section class="hero">
+                <div class="intro">
+                    <h2>Hello, I'm William Buechele</h2>
+                    <p>A Web Developer passionate about crafting clean, responsive designs.</p>
+                </div>
+                <img src="images/profile.webp" alt="A photo of William Buechele" class="hero-photo">
+            </section>
+        
+            <section class="portfolio-preview">
+                <h2>Featured Projects</h2>
+                <div class="card" id="portfolio-card">
+                    <div class="card-content">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <h3 class="card-title">Project 1</h3>
+                        <p class="card-description">Overview of Project 1.</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="arrow left" id="prev-arrow">←</button>
+                    <div class="dots" id="dots-container">
+                        <span class="dot" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="arrow right" id="next-arrow">→</button>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer">
+            <p>©<span id="currentyear"></span> William Buechele, Sherman, TX</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
